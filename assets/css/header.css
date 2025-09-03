@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: #00678A;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.menu li {
+    padding: 4px 20px;
+    background-color: #0099CC;
+    border-radius: 20px;
+}
+
+.menu li:hover {
+    transition: all 1s;
+    background-color: #0041cc;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cadastro-login {
+    display: flex;
+    gap: 5px;
+}
+
+.cadastro-login button {
+    padding: 10px 20px;
+    background-color: #0099CC;
+    border-radius: 5px;
+    border: none;
+}
+
+.cadastro-login button:hover {
+    transition: all 1s;
+    background-color: #0041cc;
+}
+
+.historico-duvidas {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.historico-duvidas i:hover {
+    color: #0041cc;
+}
+
+/* Botão hamburguer */
+.hamburguer {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Menu mobile */
+#menuMobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #00678A;
+    padding: 50px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+#menuMobile ul {
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+
+#menuMobile li {
+    padding: 10px 20px;
+    background-color: #0099CC;
+    border-radius: 20px;
+}
+
+#menuMobile li:hover {
+    background-color: #0041cc;
+}
+
+#menuMobile.show {
+    right: 0;
+}
+
+.foto-perfil{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        height: 98px;
+    }
+
+    .logo a {
+        height: 50%;
+        width: 50%;
+    }
+
+    .menu:not(#menuMobile),
+    .direita {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active {
+        color: white;
+        z-index: 99999;
+    }
+
+     .hamburguer.active:hover {
+        color: rgb(24, 16, 16);
+    }
+
+    ul{
+        justify-content: center;
+        width: 60%;
+        text-align: center;
+    }
+}
