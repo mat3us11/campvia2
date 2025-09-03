@@ -162,7 +162,7 @@ header {
 
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 80%;
     }
 
     header {
@@ -186,10 +186,6 @@ header {
     .hamburguer.active {
         color: white;
         z-index: 99999;
-    }
-
-     .hamburguer.active:hover {
-        color: rgb(24, 16, 16);
     }
 
     ul{

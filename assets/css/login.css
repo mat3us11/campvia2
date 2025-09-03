@@ -1,96 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Afacad';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Afacad';
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
-    background-color: #00678A;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    color: white;
+  background-color: #00678A;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  color: white;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .logo span {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .logo i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .duvidas i:hover {
-    color: #0041cc;
+  color: #0041cc;
 }
 
 main {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .esquerda {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
 .esquerda-foto {
-    background-color: #F6F6F6;
-    padding: 10px;
-    border-radius: 10px 10px 0px 0px;
+  background-color: #F6F6F6;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .esquerda-texto {
-    background-color: #EBEBEB;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #EBEBEB;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .direita {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .direita h3 {
@@ -138,6 +140,7 @@ input[type="email"] {
   font-size: 13px;
   margin: 10px 0;
 }
+
 .botoes-sociais {
   display: flex;
   justify-content: space-between;
@@ -163,4 +166,38 @@ input[type="email"] {
 
 .botoes-sociais img {
   width: 16px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .esquerda {
+    width: 100%;
+  }
+
+  .direita {
+    padding: 0;
+  }
+
+  .esquerda-texto {
+    gap: 10px;
+  }
+
+  .esquerda-texto p {
+    font-size: 12px;
+  }
+
+  .esquerda-foto,
+  .esquerda-texto {
+    padding: 0;
+  }
+
+  .botoes-sociais button,
+  .botoes-sociais .btn-social {
+    margin-bottom: 20px;
+  }
 }
