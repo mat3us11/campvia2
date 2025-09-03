@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #00678A;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+.duvidas i:hover {
+    color: #0041cc;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.esquerda-foto {
+    background-color: #F6F6F6;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.esquerda-texto {
+    background-color: #EBEBEB;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.direita {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.direita h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.botao-continuar {
+  padding: 12px;
+  background-color: #00678A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.botao-continuar:hover {
+  background-color: #005670;
+}
+
+.criar-conta {
+  text-align: center;
+  color: #2e2d2d;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.ou {
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin: 10px 0;
+}
+.botoes-sociais {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.botoes-sociais button,
+.botoes-sociais .btn-social {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+
+.botoes-sociais img {
+  width: 16px;
+}
